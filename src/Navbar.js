@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import img1 from "./NUTRILOCK AGRO FOODS_20251120_162643_0000.png";
-import { FaBarcode, FaBars, FaUser } from "react-icons/fa";
+import { FaBars, FaUser } from "react-icons/fa";
 import { useLocation, useNavigate } from "react-router-dom";
 
 function Navbar() {
