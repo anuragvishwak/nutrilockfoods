@@ -7,7 +7,7 @@ import { RiLeafLine } from "react-icons/ri";
 function Footer() {
   return (
     <div className="bg-[#221a15] p-10">
-      <div className="flex justify-between gap-10 flex-wrap">
+      <div className="flex justify-between gap-5 sm:gap-10 flex-wrap">
         <div className="flex-1 min-w-[250px]">
           <div className="flex items-center space-x-3">
             <RiLeafLine
@@ -20,7 +20,7 @@ function Footer() {
             </div>
           </div>
 
-          <p className="text-white mt-4">
+          <p className="text-white text-sm sm:text-base mt-4">
             Crafting clean, honest nutrition straight from the heart of Gujarat.
             Made to make India a better and healthier place — one shake at a
             time.
@@ -58,9 +58,9 @@ function Footer() {
         </div>
       </div>
 
-      <hr className="my-10 border-gray-500" />
+      <hr className="my-5 sm:my-10 border-gray-500" />
 
-      <p className="text-gray-300 text-center">
+      <p className="text-gray-300 text-sm sm:text-base text-center">
         © 2024 Nutrilock Agro Foods. All rights reserved.
       </p>
     </div>
