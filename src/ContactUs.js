@@ -57,6 +57,7 @@ function ContactUs() {
             className="w-full sm:w-[500px] h-[300px] sm:h-[450px] rounded-xl"
             allowFullScreen=""
             loading="lazy"
+            title="Google Map Location"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>

@@ -85,7 +85,7 @@ function DefaultLandingPage() {
 
             <img
               src={img5}
-              alt="product image"
+              alt="Product"
               className="h-96 sm:h-[600px] object-contain"
             />
           </div>
