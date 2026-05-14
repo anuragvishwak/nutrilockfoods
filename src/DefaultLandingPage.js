@@ -1,20 +1,14 @@
 import React from "react";
 import Navbar from "./Navbar";
-import img1 from "./peanut bar image.png";
-import {
-  FaArrowRightArrowLeft,
-  FaArrowRightLong,
-  FaShield,
-} from "react-icons/fa6";
+import { FaArrowRightLong, FaShield } from "react-icons/fa6";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { RiLeafLine } from "react-icons/ri";
 import Footer from "./Footer";
 import { motion } from "framer-motion";
 import img5 from "./peanut butter.png";
 import { FaHeart, FaStar } from "react-icons/fa";
-import { DiSpark } from "react-icons/di";
 import { BsFillLightningChargeFill } from "react-icons/bs";
-import { BiLeftArrow, BiRightArrow, BiRightArrowAlt } from "react-icons/bi";
+import { BiRightArrowAlt } from "react-icons/bi";
 
 function DefaultLandingPage() {
   return (
@@ -89,7 +83,11 @@ function DefaultLandingPage() {
               </div>
             </div>
 
-            <img src={img5} className="h-96 sm:h-[600px] object-contain" />
+            <img
+              src={img5}
+              alt="product image"
+              className="h-96 sm:h-[600px] object-contain"
+            />
           </div>
         </div>
 
