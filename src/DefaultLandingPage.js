@@ -1,18 +1,14 @@
 import React from "react";
 import Navbar from "./Navbar";
-import { FaArrowRightLong, FaCubesStacked, FaShield } from "react-icons/fa6";
+import { FaArrowRightLong, FaCubesStacked } from "react-icons/fa6";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { RiLeafLine } from "react-icons/ri";
 import Footer from "./Footer";
 import { motion } from "framer-motion";
 import img5 from "./peanut butter.png";
-import { FaHeart, FaStar } from "react-icons/fa";
 import { BsFillLightningChargeFill } from "react-icons/bs";
 import { BiRightArrowAlt } from "react-icons/bi";
-import img1 from "./background removed nutrilock.png";
 import { TbHeartCheck, TbTestPipeOff } from "react-icons/tb";
-import video2 from "./video2.mp4";
-import video3 from "./video3.mp4";
 
 function DefaultLandingPage() {
   return (
