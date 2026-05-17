@@ -33,7 +33,7 @@ ${
     >
       <img src={img1} className="h-8 sm:h-16 w-auto" alt="logo" />
 
-      <div className="font-merri hidden sm:flex items-center space-x-5 text-xl font-semibold">
+      <div className="hidden sm:flex items-center space-x-5 text-xl font-semibold">
         <button
           className={`${currentLocation.pathname === "/" ? "text-[#7a5137]" : "text-gray-700"}`}
           onClick={() => navigation("/")}
@@ -62,7 +62,7 @@ ${
       </div>
 
       {open_navbar && (
-        <div className="font-merri bg-white p-5 rounded-lg shadow-xl fixed right-5 border border-gray-300 top-16 flex flex-col sm:hidden font-semibold">
+        <div className="bg-white p-5 rounded-lg shadow-xl fixed right-5 border border-gray-300 top-16 flex flex-col sm:hidden font-semibold">
           <button
             className={`${currentLocation.pathname === "/" ? "text-[#7a5137]" : "text-gray-700"}`}
             onClick={() => navigation("/")}

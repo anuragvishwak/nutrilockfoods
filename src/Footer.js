@@ -20,10 +20,9 @@ function Footer() {
             </div>
           </div>
 
-          <p className="text-white text-sm sm:text-base mt-4">
-            Crafting clean, honest nutrition straight from the heart of Gujarat.
-            Made to make India a better and healthier place — one shake at a
-            time.
+          <p className="text-white text-sm sm:text-base mt-3">
+            Nutrilock brings together taste, nutrition and simplicity. Crafted
+            for your healthy daily routine.
           </p>
         </div>
 
@@ -43,17 +42,17 @@ function Footer() {
 
           <div className="flex items-center space-x-2 mt-2">
             <FaPhone className="text-yellow-500" />
-            <p className="text-white">+91 9327855861</p>
+            <p className="text-white">+91 9274027745</p>
           </div>
 
           <div className="flex items-center space-x-2 mt-2">
             <BiMailSend className="text-yellow-500" />
-            <p className="text-white">nutrilock@agrofoods.com</p>
+            <p className="text-white">nutrilockagrofoods@gmail.com</p>
           </div>
 
           <div className="flex items-center space-x-2 mt-2">
             <FaLocationDot className="text-yellow-500" />
-            <p className="text-white">Umargam, Gujarat, India</p>
+            <p className="text-white">Talasari, Maharashtra, India</p>
           </div>
         </div>
       </div>
