@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from "./Navbar";
-import { FaArrowRightLong, FaShield } from "react-icons/fa6";
+import { FaArrowRightLong, FaCubesStacked } from "react-icons/fa6";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { RiLeafLine } from "react-icons/ri";
 import Footer from "./Footer";
 import { motion } from "framer-motion";
 import img5 from "./peanut butter.png";
-import { FaHeart, FaStar } from "react-icons/fa";
 import { BsFillLightningChargeFill } from "react-icons/bs";
 import { BiRightArrowAlt } from "react-icons/bi";
+import { TbHeartCheck, TbTestPipeOff } from "react-icons/tb";
 
 function DefaultLandingPage() {
   return (
@@ -23,25 +23,23 @@ function DefaultLandingPage() {
               transition={{ duration: 1, ease: "easeOut" }}
               className="text-4xl sm:text-7xl text-[#150500] mb-3 font-bold "
             >
-              Making India
+              Smart Nutrition for
             </motion.p>
             <motion.p
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="text-4xl sm:text-7xl text-[#150500] mb-3 font-bold "
+              className="text-4xl sm:text-7xl text-[#004527] mb-3 font-bold "
             >
-              tastes like{" "}
-              <span className="text-[#004527] font-bold">Honest food.</span>
+              Everyday Life.
             </motion.p>
             <motion.p
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="sm:text-2xl text-[#7a5137] w-full sm:w-7/12"
+              className="sm:text-2xl text-[#7a5137] w-full sm:w-10/12"
             >
-              Fuel your ambition with precision-balanced fuel designed to keep
-              you at your peak from sunrise to sunset.
+              Enjoy healthy goodness in every sip.
             </motion.p>
             <div className="flex items-center  mt-5 space-x-5">
               <motion.button
@@ -163,20 +161,20 @@ function DefaultLandingPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div className="bg-[#fff2eb] hover:bg-white hover:shadow-xl p-3 sm:p-5 border rounded-xl border-gray-300">
-              <FaHeart
+              <FaCubesStacked
                 size={40}
                 className="rounded bg-yellow-200 text-yellow-500 p-2"
               />
               <p className="text-[#004527] font-bold text-lg sm:text-xl">
-                Zero Sugar
+                Zero Added Sugar
               </p>
               <p className="text-[#7a5137] text-sm sm:text-base">
-                No added sugars. Naturally sweet from real bananas.
+                Naturally sweetened with real banana goodness.
               </p>
             </div>
 
             <div className="bg-[#fff2eb] hover:bg-white hover:shadow-xl p-3 sm:p-5 border rounded-xl border-gray-300">
-              <FaShield
+              <TbTestPipeOff
                 size={40}
                 className="rounded bg-green-200 text-green-500 p-2"
               />
@@ -184,12 +182,12 @@ function DefaultLandingPage() {
                 No Preservatives
               </p>
               <p className="text-[#7a5137] text-sm sm:text-base">
-                Honest ingredients, nothing artificial.
+                Clean ingredients with nothing artificial.
               </p>
             </div>
 
             <div className="bg-[#fff2eb] hover:bg-white hover:shadow-xl p-3 sm:p-5 border rounded-xl border-gray-300">
-              <FaStar
+              <TbHeartCheck
                 size={40}
                 className="rounded bg-orange-200 text-[#7a5137] p-2"
               />
@@ -197,7 +195,7 @@ function DefaultLandingPage() {
                 Cholesterol Free
               </p>
               <p className="text-[#7a5137] text-sm sm:text-base">
-                Heart-friendly nutrition for the everyday hustle.
+                Heart-friendly nutrition for your daily routine.
               </p>
             </div>
 
@@ -207,61 +205,76 @@ function DefaultLandingPage() {
                 className="rounded bg-yellow-200 text-yellow-500 p-2"
               />
               <p className="text-[#004527] font-bold text-lg sm:text-xl">
-                Instant Mix
+                Instant Shake Mix
               </p>
               <p className="text-[#7a5137] text-sm sm:text-base">
-                Tear, pour, shake — your protein is ready.
+                Just pour, shake and enjoy in seconds.
               </p>
             </div>
           </div>
         </div>
 
+        {/* <div className="mx-10 flex justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-20">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="h-[500px] w-full object-cover"
+            >
+              <source src={video2} type="video/mp4" />
+            </video>
+
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="h-[500px] w-full object-cover"
+            >
+              <source src={video3} type="video/mp4" />
+            </video>
+          </div>
+        </div> */}
+
         <div className="py-14 sm:py-40 bg-[#fff2eb] px-10 sm:px-20">
           <div className="mb-3">
             <p className="text-lg mb-1 text-[#7a5137]">THE INGREDIENTS</p>
             <p className="text-[#150500] font-bold text-3xl sm:text-4xl">
-              Real bananas. Real peanuts. Real Chocolates{" "}
-              <span className="text-[#004527]">Real simple.</span>
+              Real bananas. Real nuts.{" "}
+              <span className="text-[#004527]">Real goodness.</span>
             </p>
           </div>
 
           <p className="text-[#7a5137] sm:text-lg text-justify">
-            We don’t believe in complicated ingredient lists or hidden
-            additives. Every Nutrilock product is built from honest, everyday
-            superfoods — the kind you’d find in a real kitchen, not a lab. No
-            syrups. No fillers. No artificial “flavours” pretending to be food.
-            Just clean nutrition, the way nature intended.
+            Made with real bananas and crunchy nuts. Rich in nut-powered protein
+            and daily energy. A quick and healthy choice for busy days. No added
+            sugar or preservatives. Just simple ingredients with great taste.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-5 mt-5 sm:mt-10">
             <div className="p-5 bg-white border rounded-xl border-gray-200">
-              <p className="text-yellow-500 font-bold text-xl">Banana</p>
-              <p className="text-[#7a5137]">
-                Natural sweetness, potassium-rich energy for the body.
-              </p>
-            </div>
-
-            <div className="p-5 bg-white border rounded-xl border-gray-200">
-              <p className="text-[#d1885b] font-bold text-xl">Peanut</p>
-              <p className="text-[#7a5137]">
-                Plant protein powerhouse with healthy fats.
-              </p>
-            </div>
-
-            <div className="p-5 bg-white border rounded-xl border-gray-200">
               <p className="text-[#723814] font-bold text-xl">
-                Cocoa / Chocolate
+                Real Banana Powder
               </p>
-              <p className="text-[#511f01]">
-                Rich taste with natural antioxidants.
+            </div>
+            <div className="p-5 bg-white border rounded-xl border-gray-200">
+              <p className="text-yellow-500 font-bold text-xl">
+                Peanut Goodness
+              </p>
+            </div>
+
+            <div className="p-5 bg-white border rounded-xl border-gray-200">
+              <p className="text-[#d1885b] font-bold text-xl">
+                Almond Nutrition
               </p>
             </div>
 
             <div className="p-5 bg-white border rounded-xl border-gray-200">
               <p className="text-[#004527] font-bold text-xl">
-                Whey / Plant Protein
+                Naturally Delicious
               </p>
-              <p className="text-[#511f01]">Pure muscle-supporting protein.</p>
             </div>
           </div>
         </div>

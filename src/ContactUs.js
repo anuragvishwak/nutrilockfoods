@@ -28,7 +28,7 @@ function ContactUs() {
               <div className="flex items-center space-x-1">
                 <FaPhone size={30} className="bg-yellow-500 p-2 rounded" />
                 <p className="font-bold text-[#150500] text-lg sm:text-xl">
-                  +91 9327855861
+                  +91 9274027745
                 </p>
               </div>
               <p className="text-[#7a5137] text-sm sm:text-base">
@@ -41,7 +41,7 @@ function ContactUs() {
               <div className="flex items-center space-x-1">
                 <MdEmail size={30} className="bg-yellow-500 p-1.5 rounded" />
                 <p className="font-bold text-[#150500] text-lg sm:text-xl">
-                  nutrilock@agrofoods.com
+                  nutrilockagrofoods@gmail.com
                 </p>
               </div>
               <p className="text-[#7a5137] text-sm sm:text-base">
