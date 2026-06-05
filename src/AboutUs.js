@@ -190,7 +190,7 @@ function AboutUs() {
             <img
               src={img3}
               className="h-96 hidden sm:block object-contain"
-              alt="Founder's photo"
+              alt="Founder Image"
               style={{
                 maskImage:
                   "linear-gradient(to bottom, black 87%, transparent 100%)",
