@@ -15,8 +15,8 @@ function DefaultLandingPage() {
     <div className="w-full min-h-screen bg-gray-50 h-full">
       <Navbar />
       <div className="">
-        <div className="bg-gradient-to-r mix-blend-multiply flex items-center from-[#ffefe5] to-white h-[500px] sm:h-[700px]">
-          <div className="m-10">
+        <div className="bg-gradient-to-r mix-blend-multiply flex items-center from-[#ffefe5] to-white h-[420px] sm:h-[500px] md:h-[700px]">
+          <div className="m-7 sm:m-10">
             <motion.p
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -149,7 +149,7 @@ function DefaultLandingPage() {
           </div>
         </div>
 
-        <div className="py-20 sm:my-40 mx-10 sm:mx-20">
+        <div className="py-14 sm:my-20 mx-7 sm:mx-20">
           <div className="mb-5">
             <p className="text-lg mb-1 text-[#7a5137] ">WHY NUTRILOCK</p>
             <p className="text-[#150500] font-bold text-3xl sm:">
@@ -214,31 +214,7 @@ function DefaultLandingPage() {
           </div>
         </div>
 
-        {/* <div className="mx-10 flex justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-20">
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="h-[500px] w-full object-cover"
-            >
-              <source src={video2} type="video/mp4" />
-            </video>
-
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="h-[500px] w-full object-cover"
-            >
-              <source src={video3} type="video/mp4" />
-            </video>
-          </div>
-        </div> */}
-
-        <div className="py-14 sm:py-40 bg-[#fff2eb] px-10 sm:px-20">
+        <div className="py-14 sm:py-28 bg-[#fff2eb] px-7 sm:px-20">
           <div className="mb-3">
             <p className="text-lg mb-1 text-[#7a5137]">THE INGREDIENTS</p>
             <p className="text-[#150500] font-bold text-3xl sm:text-4xl">
@@ -280,7 +256,7 @@ function DefaultLandingPage() {
         </div>
 
         <div className="flex justify-center">
-          <div className="my-10 sm:my-20 bg-gradient-to-r sm:w-8/12 rounded-3xl from-[#004527] to-[#511f01] p-10 sm:p-20 mx-10 sm:mx-20">
+          <div className="my-14 sm:my-20 bg-gradient-to-r sm:w-8/12 rounded-3xl from-[#004527] to-[#511f01] p-10 sm:p-20 mx-7 sm:mx-20">
             <p className="text-3xl sm:text-4xl font-bold text-white">
               Ready to make your <span className="text-yellow-500">shake</span>{" "}
               matter?
