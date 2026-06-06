@@ -6,7 +6,7 @@ import { RiLeafLine } from "react-icons/ri";
 
 function Footer() {
   return (
-    <div className="bg-[#221a15] p-10">
+    <div className="bg-[#004527] p-10">
       <div className="flex justify-between gap-5 sm:gap-10 flex-wrap">
         <div className="flex-1 min-w-[250px]">
           <div className="flex items-center space-x-3">

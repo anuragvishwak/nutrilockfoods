@@ -38,7 +38,7 @@ function AboutUs() {
           </p>
         </div>
 
-        <div className="sm:flex items-center sm:space-x-8 bg-[#fff6e6] border">
+        <div className="sm:flex items-center sm:space-x-8 bg-green-100 border">
           <img src={img1} alt="mission" className="h-40 sm:h-auto" />
           <div className="p-5 sm:p-10">
             <div>
