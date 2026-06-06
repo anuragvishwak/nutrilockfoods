@@ -9,7 +9,6 @@ import img5 from "./peanut butter.png";
 import { BsFillLightningChargeFill } from "react-icons/bs";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { TbHeartCheck, TbTestPipeOff } from "react-icons/tb";
-import img6 from "./hero-section.png";
 
 function DefaultLandingPage() {
   return (
