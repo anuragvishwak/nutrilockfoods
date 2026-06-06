@@ -15,15 +15,15 @@ function DefaultLandingPage() {
     <div className="min-h-screen overflow-x-hidden">
       <Navbar />
       <div className="">
-        <div className="bg-gradient-to-r mix-blend-multiply flex items-center justify-center sm:space-x-28 from-[#d7ffde] to-white h-[380px] sm:h-[500px] md:h-screen">
-          <div className="p-7 sm:p-0 sm:m-10">
+        <div className="bg-gradient-to-r mix-blend-multiply flex items-center justify-center sm:space-x-28 from-[#d7ffde] to-white h-[400px] sm:h-[500px] md:h-screen">
+          <div className="p-7 text-center sm:text-left sm:p-0 sm:m-10">
             <motion.p
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, ease: "easeOut" }}
               className="text-4xl sm:text-7xl text-[#150500] mb-3 font-bold "
             >
-              Smart Nutrition for
+              Smart Nutrition
             </motion.p>
             <motion.p
               initial={{ y: -100, opacity: 0 }}
@@ -31,7 +31,7 @@ function DefaultLandingPage() {
               transition={{ duration: 1, ease: "easeOut" }}
               className="text-4xl sm:text-7xl text-[#004527] mb-3 font-bold "
             >
-              Everyday Life.
+              for Everyday Life.
             </motion.p>
             <motion.p
               initial={{ y: -100, opacity: 0 }}
