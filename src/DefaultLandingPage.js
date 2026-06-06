@@ -12,7 +12,7 @@ import { TbHeartCheck, TbTestPipeOff } from "react-icons/tb";
 
 function DefaultLandingPage() {
   return (
-    <div className="min-h-screen h-full">
+    <div className="min-h-screen overflow-x-hidden">
       <Navbar />
       <div className="">
         <div className="bg-gradient-to-r mix-blend-multiply flex items-center justify-center sm:space-x-28 from-[#d7ffde] to-white h-[380px] sm:h-[500px] md:h-screen">
@@ -126,7 +126,7 @@ function DefaultLandingPage() {
               initial={{ x: -80, opacity: 0, rotate: -45 }}
               animate={{ x: 0, opacity: 0.5, rotate: -45 }}
               transition={{ duration: 0.8 }}
-              className="absolute left-[-40px] top-1/2 -translate-y-1/2 h-[140px] sm:h-[200px] object-contain z-0"
+              className="absolute left-[-40px] top-1/2 sm:hidden -translate-y-1/2 h-[140px] sm:h-[200px] object-contain z-0"
             />
 
             <motion.img
@@ -134,7 +134,7 @@ function DefaultLandingPage() {
               initial={{ x: -80, opacity: 0, rotate: -20 }}
               animate={{ x: 0, opacity: 0.7, rotate: -20 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="absolute left-10 top-1/2 -translate-y-1/2 h-[220px] object-contain z-10"
+              className="absolute left-10 top-1/2 sm:hidden -translate-y-1/2 h-[220px] object-contain z-10"
             />
 
             <motion.div
@@ -168,7 +168,7 @@ function DefaultLandingPage() {
               initial={{ x: 80, opacity: 0, rotate: 20 }}
               animate={{ x: 0, opacity: 0.7, rotate: 20 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="absolute right-10 top-1/2 -translate-y-1/2 h-[220px] object-contain z-10"
+              className="absolute right-10 sm:hidden top-1/2 -translate-y-1/2 h-[220px] object-contain z-10"
             />
 
             <motion.img
@@ -176,7 +176,7 @@ function DefaultLandingPage() {
               initial={{ x: 80, opacity: 0, rotate: 45 }}
               animate={{ x: 0, opacity: 0.5, rotate: 45 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="absolute right-[-40px] top-1/2 -translate-y-1/2 h-[140px] sm:h-[200px] object-contain z-0"
+              className="absolute right-[-40px] sm:hidden top-1/2 -translate-y-1/2 h-[140px] sm:h-[200px] object-contain z-0"
             />
           </div>
         </div>
