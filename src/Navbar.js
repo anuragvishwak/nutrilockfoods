@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import img1 from "./NUTRILOCK AGRO FOODS_20251120_162643_0000.png";
+import img1 from "./logo.png";
 import { FaBars, FaUser } from "react-icons/fa";
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -41,12 +41,6 @@ ${
           Home
         </button>
 
-        {/* <button
-          className={`${currentLocation.pathname === "/Product" ? "text-[#7a5137]" : "text-gray-700"}`}
-          onClick={() => navigation("/Product")}
-        >
-          Products
-        </button> */}
         <button
           className={`${currentLocation.pathname === "/AboutUs" ? "text-[#7a5137]" : "text-gray-700"}`}
           onClick={() => navigation("/AboutUs")}

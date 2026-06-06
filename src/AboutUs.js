@@ -11,12 +11,12 @@ function AboutUs() {
   return (
     <div className="w-full">
       <Navbar />
-      <div className="my-14 sm:my-32">
+      <div className="my-20 sm:my-32">
         <div className="mx-7 sm:mx-10 mb-14">
-          <p className="text-lg mb-1 text-[#7a5137] ">
+          <p className="text-lg mb-1  text-[#7a5137] ">
             ABOUT NUTRILOCK AGRO FOODS
           </p>
-          <p className="text-[#150500] mt-3 font-bold text-4xl sm:text-6xl">
+          <p className="text-[#150500] sm:mt-3 font-bold text-4xl sm:text-6xl">
             Nutrition Simplified,
           </p>
           <p className="text-[#004527] mb-8 mt-1.5 font-bold text-4xl sm:text-6xl">
@@ -71,66 +71,74 @@ function AboutUs() {
           </p>
         </div>
 
-        <div className="mx-7 sm:mx-10 my-10 sm:my-20">
+        <div className="mx-7 sm:mx-28 my-10 sm:my-20">
           <p className="sm:text-lg mb-1 text-[#7a5137]">WHAT WE STAND FOR</p>
           <p className="text-[#150500] font-bold text-3xl sm:text-4xl">
             Four values, <span className="text-[#004527]">no compromises.</span>
           </p>
 
           <div className="grid grid-cols-1 mt-5 sm:grid-cols-2 gap-5">
-            <div className="bg-[#fff2eb] hover:bg-white hover:shadow-xl p-3 sm:p-5 border rounded-xl border-gray-300">
-              <FaHeart
-                size={40}
-                className="rounded bg-[#004527] text-yellow-500 p-2"
-              />
-              <p className="text-[#004527] font-bold text-lg sm:text-xl">
-                Health First
-              </p>
-              <p className="text-[#7a5137] text-sm sm:text-base">
-                Every formulation begins with one question — is it genuinely
-                good for you?
-              </p>
+            <div className="bg-yellow-100 flex items-center justify-center h-60 hover:bg-white hover:shadow-xl p-3 sm:p-5 border rounded-tr-[35px] rounded-bl-[35px] border-gray-300">
+              <div>
+                <FaHeart
+                  size={40}
+                  className="rounded bg-[#004527] text-yellow-500 p-2"
+                />
+                <p className="text-[#004527] font-bold text-lg sm:text-xl">
+                  Health First
+                </p>
+                <p className="text-[#7a5137] sm:w-[400px] text-sm sm:text-base">
+                  Every formulation begins with one question — is it genuinely
+                  good for you?
+                </p>
+              </div>
             </div>
 
-            <div className="bg-[#fff2eb] hover:bg-white hover:shadow-xl p-3 sm:p-5 border rounded-xl border-gray-300">
-              <FaLeaf
-                size={40}
-                className="rounded bg-[#004527] text-yellow-500 p-2"
-              />
-              <p className="text-[#004527] font-bold text-lg sm:text-xl">
-                Honest Ingredients
-              </p>
-              <p className="text-[#7a5137] text-sm sm:text-base">
-                Short labels. Real food. No artificial shortcuts, ever.
-              </p>
+            <div className="bg-[#fff2eb] flex items-center justify-center h-60 hover:bg-white hover:shadow-xl rounded-tl-[35px] rounded-br-[35px] p-3 sm:p-5 border border-gray-300">
+              <div>
+                <FaLeaf
+                  size={40}
+                  className="rounded bg-[#004527] text-yellow-500 p-2"
+                />
+                <p className="text-[#004527] font-bold text-lg sm:text-xl">
+                  Honest Ingredients
+                </p>
+                <p className="text-[#7a5137] text-sm sm:text-base">
+                  Short labels. Real food. No artificial shortcuts, ever.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-[#fff2eb] hover:bg-white hover:shadow-xl p-3 sm:p-5 border rounded-xl border-gray-300">
-              <FaPlantWilt
-                size={40}
-                className="rounded bg-[#004527] text-yellow-500 p-2"
-              />
-              <p className="text-[#004527] font-bold text-lg sm:text-xl">
-                HMade in India
-              </p>
-              <p className="text-[#7a5137] text-sm sm:text-base">
-                Born in Talasari, Maharashtra, India — sourcing from Indian
-                farms, made for Indian families.
-              </p>
+            <div className="bg-[#fff2eb] flex items-center justify-center h-60 hover:bg-white hover:shadow-xl p-3 sm:p-5 border rounded-tl-[35px] rounded-br-[35px] border-gray-300">
+              <div>
+                <FaPlantWilt
+                  size={40}
+                  className="rounded bg-[#004527] text-yellow-500 p-2"
+                />
+                <p className="text-[#004527] font-bold text-lg sm:text-xl">
+                  HMade in India
+                </p>
+                <p className="text-[#7a5137] sm:w-[400px] text-sm sm:text-base">
+                  Born in Talasari, Maharashtra, India — sourcing from Indian
+                  farms, made for Indian families.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-[#fff2eb] hover:bg-white hover:shadow-xl p-3 sm:p-5 border rounded-xl border-gray-300">
-              <FaUsers
-                size={40}
-                className="rounded bg-[#004527] text-yellow-500 p-2"
-              />
-              <p className="text-[#004527] font-bold text-lg sm:text-xl">
-                For Everyone
-              </p>
-              <p className="text-[#7a5137] text-sm sm:text-base">
-                From school-going kids to working adults — nutrition shouldn't
-                be a luxury.
-              </p>
+            <div className="bg-yellow-100 flex items-center justify-center h-60 hover:bg-white hover:shadow-xl p-3 sm:p-5 border rounded-bl-[35px] rounded-tr-[35px] border-gray-300">
+              <div>
+                <FaUsers
+                  size={40}
+                  className="rounded bg-[#004527] text-yellow-500 p-2"
+                />
+                <p className="text-[#004527] font-bold text-lg sm:text-xl">
+                  For Everyone
+                </p>
+                <p className="text-[#7a5137] sm:w-[400px] text-sm sm:text-base">
+                  From school-going kids to working adults — nutrition shouldn't
+                  be a luxury.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -158,27 +166,33 @@ function AboutUs() {
         </div>
 
         <div className="bg-gradient-to-br from-[#fff2eb] mb-14 sm:mb-32 py-10 sm:py-20 to-blue-100">
-          <div className="sm:flex items-center bg-white p-6 sm:p-16 rounded-3xl border border-gray-400 shadow-lg mx-10 sm:mx-36 space-x-2 justify-center">
-            <div className="flex justify-center">
+          <div className="sm:flex items-center bg-white p-6 sm:p-20 rounded-3xl border border-gray-400 shadow-lg mx-10 sm:mx-36 sm:space-x-2 justify-center">
+            <div className="relative sm:hidden w-[150px] h-[150px] mx-auto mb-10 shadow rounded-full bg-yellow-500 overflow-visible">
               <img
                 src={img3}
-                className="h-60 sm:hidden object-contain"
                 alt="Meshwa Patel"
+                className="absolute bottom-0 left-1/2 mb-10 -translate-x-1/2 h-[180px]"
                 style={{
                   maskImage:
-                    "linear-gradient(to bottom, black 87%, transparent 100%)",
+                    "linear-gradient(to bottom, black 75%, rgba(0,0,0,0.5) 90%, transparent 100%)",
                   WebkitMaskImage:
-                    "linear-gradient(to bottom, sm:hidden black 90%, transparent 100%)",
+                    "linear-gradient(to bottom, black 75%, rgba(0,0,0,0.5) 80%, transparent 100%)",
                 }}
               />
+
+              <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 z-10">
+                <p className="text-[#004527] font-bold bg-white px-4 py-2 rounded-full border border-gray-300 shadow-lg whitespace-nowrap">
+                  Meshwa Patel
+                </p>
+              </div>
             </div>
             <div>
-              <p className="text-[#150500] font-bold mt-5 mb-5 text-2xl sm:text-4xl">
-                Meet the Founder -{" "}
-                <span className="text-[#004525]"> Meshwa Patel</span>
+              <p className="text-[#150500] font-bold mt-5 sm:mb-5 text-2xl sm:text-4xl">
+                Meet the Mind Behind{" "}
+                <span className="text-[#004525]">the Mission</span>
               </p>
 
-              <p className="sm:text-2xl w-full text-justify text-[#7a5137] mt-3 sm:w-11/12">
+              <p className="sm:text-2xl text-[#7a5137] mt-3">
                 The idea was brought to life by Meshwa Patel, the founder of
                 Nutrilock. With a vision to simplify everyday nutrition, she
                 aimed to create healthier and easy options for people with busy
@@ -187,17 +201,23 @@ function AboutUs() {
               </p>
             </div>
 
-            <img
-              src={img3}
-              className="h-96 hidden sm:block object-contain"
-              alt="Meshwa Patel, Founder of Nutrilock"
-              style={{
-                maskImage:
-                  "linear-gradient(to bottom, black 87%, transparent 100%)",
-                WebkitMaskImage:
-                  "linear-gradient(to bottom, black 90%, transparent 100%)",
-              }}
-            />
+            <div className="relative w-[250px] hidden sm:block h-[250px] shadow rounded-[400px] bg-yellow-500 overflow-visible flex-shrink-0">
+              <img
+                src={img3}
+                alt="Meshwa Patel, Founder of Nutrilock"
+                className="absolute bottom-0 left-1/2 mb-14 -translate-x-1/2  h-[320px] max-w-none"
+                style={{
+                  maskImage:
+                    "linear-gradient(to bottom, black 75%, rgba(0,0,0,0.5) 90%, transparent 100%)",
+                  WebkitMaskImage:
+                    "linear-gradient(to bottom, black 75%, rgba(0,0,0,0.5) 80%, transparent 100%)",
+                }}
+              />
+
+              <p className="absolute text-[#004527] text-xl font-bold -bottom-5 left-1/2 -translate-x-1/2 bg-white px-6 py-2 rounded-full border border-gray-300 shadow-lg whitespace-nowrap z-10">
+                Meshwa Patel
+              </p>
+            </div>
           </div>
         </div>
 
