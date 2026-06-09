@@ -11,8 +11,8 @@ function AboutUs() {
   return (
     <div className="w-full">
       <Navbar />
-      <div className="my-20 sm:my-32">
-        <div className="mx-7 sm:mx-10 mb-14">
+      <div className="my-20 sm:my-40">
+        <div className="mx-7 sm:mx-10 mb-28">
           <p className="text-lg mb-1  text-[#7a5137] ">
             ABOUT NUTRILOCK AGRO FOODS
           </p>

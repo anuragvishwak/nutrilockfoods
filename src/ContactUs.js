@@ -8,7 +8,7 @@ function ContactUs() {
   return (
     <div className="w-full min-h-screen h-full">
       <Navbar />
-      <div className="sm:flex my-20 sm:my-40 mx-10 sm:mx-28 items-center justify-center sm:space-x-20">
+      <div className="sm:flex my-20 sm:my-40 mx-7 sm:mx-28 items-center justify-center sm:space-x-20">
         <div>
           <div className="mb-8 sm:mb-14">
             <p className="text-lg mb-1 text-[#7a5137] ">CONTACT US</p>
@@ -39,8 +39,12 @@ function ContactUs() {
             <div className="bg-[#fff2eb] mt-5 sm:mt-0 hover:bg-white hover:shadow-xl p-5 border rounded-xl border-gray-300">
               <p className="mb-1 text-[#7a5137] ">EMAIL</p>
               <div className="flex items-center space-x-1">
-                <MdEmail size={30} className="bg-yellow-500 p-1.5 rounded" />
-                <p className="font-bold text-[#150500] text-lg sm:text-xl">
+                <MdEmail
+                  size={30}
+                  className="bg-yellow-500 p-1.5 rounded flex-shrink-0"
+                />
+
+                <p className="font-bold text-[#150500] text-lg sm:text-xl break-all">
                   nutrilockagrofoods@gmail.com
                 </p>
               </div>
