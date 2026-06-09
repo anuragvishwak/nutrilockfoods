@@ -35,7 +35,11 @@ function Cart({ count, setcount, setopen_cart }) {
         <div className="border p-6 my-6 border-gray-300 rounded-lg">
           <div className="sm:flex items-center sm:space-x-5">
             <div className="flex justify-center">
-              <img src={img5} className="h-32" />
+              <img
+                src={img5}
+                alt="Nutrilock Banana Peanut Instant Shake"
+                className="h-32"
+              />
             </div>
             <div className="">
               <p className="text-[#004527] my-3 sm:my-0 font-bold">

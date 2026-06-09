@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import img1 from "./logo.png";
-import { FaBars, FaUser } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { useLocation, useNavigate } from "react-router-dom";
 import { CgShoppingCart } from "react-icons/cg";
-import Cart from "./Cart";
 
 function Navbar({ count, setcount, setopen_cart }) {
   const currentLocation = useLocation();
