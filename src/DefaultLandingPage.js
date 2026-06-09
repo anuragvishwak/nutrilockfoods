@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import { FaArrowRightLong, FaCubesStacked } from "react-icons/fa6";
 import { AiOutlineShoppingCart } from "react-icons/ai";
@@ -9,13 +9,28 @@ import img5 from "./peanut butter.png";
 import { BsFillLightningChargeFill } from "react-icons/bs";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { TbHeartCheck, TbTestPipeOff } from "react-icons/tb";
+import Cart from "./Cart";
 
 function DefaultLandingPage() {
+  const [count, setcount] = useState(0);
+  const [open_cart, setopen_cart] = useState(false);
+
+  const handleWhatsApp = () => {
+    const message =
+      "Hi, I am a retailer/wholesaler and would like to know more about your products, pricing, distribution opportunities, and how I can sell Nutrilock products.";
+
+    const whatsappUrl = `https://wa.me/919274027745?text=${encodeURIComponent(
+      message,
+    )}`;
+
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <div className="min-h-screen overflow-x-hidden">
-      <Navbar />
+      <Navbar count={count} setcount={setcount} setopen_cart={setopen_cart} />
       <div className="">
-        <div className="bg-gradient-to-r mix-blend-multiply flex items-center justify-center sm:space-x-28 from-[#d7ffde] to-white h-[400px] sm:h-[500px] md:h-screen">
+        <div className="bg-gradient-to-r mix-blend-multiply flex items-center justify-center sm:space-x-48 from-[#d7ffde] to-white h-[400px] sm:h-[500px] md:h-screen">
           <div className="p-7 text-center sm:text-left sm:p-0 sm:m-10">
             <motion.p
               initial={{ y: -100, opacity: 0 }}
@@ -42,18 +57,6 @@ function DefaultLandingPage() {
               Enjoy healthy goodness in every sip.
             </motion.p>
             <div className="flex items-center  mt-5 space-x-5">
-              <motion.button
-                initial={{ x: -100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="border-2 border-yellow-500 px-3 py-1.5 sm:px-6 sm:py-4 font-semibold rounded-full shadow-xl bg-yellow-500 text-white"
-              >
-                <div className="flex items-center space-x-2">
-                  <p className="">Buy Now</p> <AiOutlineShoppingCart />
-                </div>
-              </motion.button>
               <motion.button
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
@@ -116,6 +119,25 @@ function DefaultLandingPage() {
                 className="h-[140px] sm:h-[180px] -ml-10 mt-20 object-contain z-0"
               />
             </div>
+            <div className="flex justify-center relative -mt-6 z-50">
+              <motion.button
+                onClick={() => {
+                  setcount(count + 1);
+                }}
+                initial={{ scale: 0.5, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{
+                  duration: 0.5,
+                  delay: 1.8,
+                  ease: "easeOut",
+                }}
+                className="border-2 border-yellow-500 px-3 py-1.5 sm:px-5 sm:py-3 font-semibold rounded-full shadow-xl bg-yellow-500 text-white"
+              >
+                <div className="flex items-center space-x-2">
+                  <p className="">Buy Now</p> <AiOutlineShoppingCart />
+                </div>
+              </motion.button>
+            </div>
           </div>
         </div>
 
@@ -144,22 +166,29 @@ function DefaultLandingPage() {
               className="absolute inset-0 flex items-center justify-center z-30"
             >
               <div className="relative bg-[#ffffdc] border border-[#e7dccf] rounded-[40px] px-10 sm:px-24 pt-6 sm:pt-10 shadow-sm rotate-[-3deg]">
-                <div className="absolute -right-6 top-6 sm:-right-10 sm:top-8 rotate-[6deg]">
-                  <div className="bg-[#004527] px-3 py-1.5 sm:px-6 sm:py-4 text-white rounded-xl sm:rounded-3xl shadow-xl">
-                    <p className="text-xs sm:text-sm tracking-wide opacity-80">
-                      NEW LAUNCH
-                    </p>
-                    <p className="font-semibold sm:font-bold sm:text-2xl">
-                      Banana × Peanut
-                    </p>
-                  </div>
-                </div>
-
                 <img
                   src={img5}
                   alt="Product"
                   className="h-80 sm:h-[500px] object-contain"
                 />
+                <div className="absolute -right-6 top-6 sm:-right-10 sm:top-8 rotate-[6deg]">
+                  <div className="flex justify-center sm:hidden  relative -mt-6 z-50">
+                    <motion.button
+                      initial={{ scale: 0.5, opacity: 0 }}
+                      animate={{ scale: 1, opacity: 1 }}
+                      transition={{
+                        duration: 0.5,
+                        delay: 0.8,
+                        ease: "easeOut",
+                      }}
+                      className="border-2 border-yellow-500 px-3 py-1.5 sm:px-5 sm:py-3 font-semibold rounded-full shadow-xl bg-yellow-500 text-white"
+                    >
+                      <div className="flex items-center space-x-2">
+                        <p className="">Buy Now</p> <AiOutlineShoppingCart />
+                      </div>
+                    </motion.button>
+                  </div>
+                </div>
               </div>
             </motion.div>
 
@@ -446,7 +475,10 @@ function DefaultLandingPage() {
               let's talk. We respond within 24 hours.
             </p>
 
-            <button className="border-2 sm:text-lg border-yellow-500 px-3 sm:px-6 py-1.5 sm:py-4 font-semibold rounded-full shadow-xl bg-yellow-500">
+            <button
+              onClick={handleWhatsApp}
+              className="border-2 sm:text-lg border-yellow-500 px-3 sm:px-6 py-1.5 sm:py-4 font-semibold rounded-full shadow-xl bg-yellow-500"
+            >
               <div className="flex items-center space-x-2">
                 <p>Get in Touch</p>
                 <BiRightArrowAlt size={30} />
@@ -455,6 +487,9 @@ function DefaultLandingPage() {
           </div>
         </div>
       </div>
+      {open_cart && (
+        <Cart count={count} setcount={setcount} setopen_cart={setopen_cart} />
+      )}
       <Footer />
     </div>
   );

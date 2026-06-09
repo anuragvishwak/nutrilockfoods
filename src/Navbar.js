@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import img1 from "./logo.png";
 import { FaBars, FaUser } from "react-icons/fa";
 import { useLocation, useNavigate } from "react-router-dom";
+import { CgShoppingCart } from "react-icons/cg";
+import Cart from "./Cart";
 
-function Navbar() {
+function Navbar({ count, setcount, setopen_cart }) {
   const currentLocation = useLocation();
   const navigation = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,7 +33,7 @@ ${
     : "bg-transparent py-4"
 }`}
     >
-      <img src={img1} className="h-8 sm:h-16 w-auto" alt="logo" />
+      <img src={img1} className="h-8 sm:h-12 w-auto" alt="logo" />
 
       <div className="hidden sm:flex items-center space-x-5 text-xl font-semibold">
         <button
@@ -85,11 +87,19 @@ ${
         </div>
       )}
 
-      <div className="flex items-center space-x-2">
-        <FaUser
-          size={30}
-          className="border border-[#03256c] text-[#333333] p-1 rounded-full"
-        />
+      <div className="flex relative h-14 items-center space-x-3 sm:space-x-2">
+        <button
+          onClick={() => {
+            setopen_cart(true);
+          }}
+          className="relative"
+        >
+          <p className="absolute -top-2 -right-2 bg-red-500 text-xs rounded-full min-w-[20px] h-5 flex items-center justify-center text-white font-bold">
+            {count}
+          </p>
+
+          <CgShoppingCart className="border text-[32px] sm:text-4xl border-[#03256c] text-[#333333] p-1 rounded-full" />
+        </button>
         <button
           onClick={() => {
             setopen_navbar(!open_navbar);
